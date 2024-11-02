@@ -10,7 +10,6 @@ public class FallingPlatform : MonoBehaviour
 
     void Start()
     {
-        // Store the initial position and rotation of the platform
         initialPosition = transform.position;
         initialRotation = transform.rotation;
         rb = GetComponent<Rigidbody>();
@@ -19,7 +18,6 @@ public class FallingPlatform : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        // Check if the colliding object is the player
         if (collision.gameObject.CompareTag("Player") && !isDestroyed)
         {
             StartCoroutine(RespawnPlatform());
@@ -29,8 +27,7 @@ public class FallingPlatform : MonoBehaviour
     IEnumerator RespawnPlatform()
     {
         yield return new WaitForSeconds(2);
-        rb.isKinematic = false; // Make it dynamic
-        // Destroy the platform
+        rb.isKinematic = false;
         isDestroyed = true;
 
         // Wait for 2 seconds before respawning the platform
@@ -48,7 +45,6 @@ public class FallingPlatform : MonoBehaviour
         transform.position = initialPosition;
         transform.rotation = initialRotation;
 
-        // Then make the Rigidbody kinematic
         rb.isKinematic = true;
 
         // Reset the destroyed flag
