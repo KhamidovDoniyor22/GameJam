@@ -20,7 +20,7 @@ public class MovingPlatform : MonoBehaviour
         {
             if (movingForward)
             {
-                transform.Translate(Vector3.forward * speed * Time.deltaTime);
+                transform.Translate(Vector3.right * speed * Time.deltaTime);
                 if (transform.position.x >= endingX)
                 {
                     movingForward = false;
@@ -29,7 +29,7 @@ public class MovingPlatform : MonoBehaviour
             }
             else
             {
-                transform.Translate(Vector3.back * speed * Time.deltaTime);
+                transform.Translate(Vector3.left * speed * Time.deltaTime);
                 if (transform.position.x <= startingX)
                 {
                     movingForward = true;
