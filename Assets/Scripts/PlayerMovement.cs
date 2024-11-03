@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody rb;
     private bool isGrounded;
+    private bool doubleJump = false;
 
     void Start()
     {
@@ -18,9 +19,17 @@ public class PlayerMovement : MonoBehaviour
     {
         Move();
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            Jump();
+            if (isGrounded)
+            {
+                Jump();
+            }
+            else if (!doubleJump)
+            {
+                doubleJump = true;
+                Jump();
+            }
         }
     }
 
@@ -42,6 +51,7 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
         {
             isGrounded = true;
+            doubleJump = false;
         }
     }
 
