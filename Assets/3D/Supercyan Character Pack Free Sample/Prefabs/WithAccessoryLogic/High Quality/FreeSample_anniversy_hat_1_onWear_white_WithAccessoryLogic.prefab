@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &489964141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778955708232685713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e9b5b9a724e2bc4f85affcad29ea34d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_renderer: {fileID: 298844591727171879}
+  m_rig: {fileID: 8716395808359513355}
+--- !u!1001 &534020760186546072
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 499197757355124147, guid: 76d3890d4b86378419ed41be709a1d28,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499197757355124147, guid: 76d3890d4b86378419ed41be709a1d28,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499197757355124147, guid: 76d3890d4b86378419ed41be709a1d28,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499197757355124147, guid: 76d3890d4b86378419ed41be709a1d28,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499197757355124147, guid: 76d3890d4b86378419ed41be709a1d28,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499197757355124147, guid: 76d3890d4b86378419ed41be709a1d28,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499197757355124147, guid: 76d3890d4b86378419ed41be709a1d28,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 499197757355124147, guid: 76d3890d4b86378419ed41be709a1d28,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499197757355124147, guid: 76d3890d4b86378419ed41be709a1d28,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499197757355124147, guid: 76d3890d4b86378419ed41be709a1d28,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499197757355124147, guid: 76d3890d4b86378419ed41be709a1d28,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 983562748210364169, guid: 76d3890d4b86378419ed41be709a1d28,
+        type: 3}
+      propertyPath: m_Name
+      value: FreeSample_anniversy_hat_1_onWear_white_WithAccessoryLogic
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 76d3890d4b86378419ed41be709a1d28, type: 3}
+--- !u!1 &778955708232685713 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 983562748210364169, guid: 76d3890d4b86378419ed41be709a1d28,
+    type: 3}
+  m_PrefabInstance: {fileID: 534020760186546072}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8716395808359513355 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9196318292189551251, guid: 76d3890d4b86378419ed41be709a1d28,
+    type: 3}
+  m_PrefabInstance: {fileID: 534020760186546072}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &298844591727171879 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 237719498988961471, guid: 76d3890d4b86378419ed41be709a1d28,
+    type: 3}
+  m_PrefabInstance: {fileID: 534020760186546072}
+  m_PrefabAsset: {fileID: 0}

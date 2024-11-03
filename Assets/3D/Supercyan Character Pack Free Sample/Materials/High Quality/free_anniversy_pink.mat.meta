@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 995dcbdd06cc7684d8dcf9105612ac27
+labels:
+- Man
+- Male
+timeCreated: 1464185470
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79870
+  packageName: 'Character Pack: Free Sample'
+  packageVersion: 3.0.0
+  assetPath: Assets/Supercyan Character Pack Free Sample/Materials/High Quality/free_anniversy_pink.mat
+  uploadId: 691337

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 367dbb9e07d16df4cbcb65ed35561be3
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79870
+  packageName: 'Character Pack: Free Sample'
+  packageVersion: 3.0.0
+  assetPath: Assets/Supercyan Character Pack Free Sample/Shaders/SupercyanShader.shader
+  uploadId: 691337

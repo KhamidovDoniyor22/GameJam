@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 20e17aac92cea844aaa708706067eb14
+labels:
+- Male
+- Man
+- Mobile
+timeCreated: 1464186522
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79870
+  packageName: 'Character Pack: Free Sample'
+  packageVersion: 3.0.0
+  assetPath: Assets/Supercyan Character Pack Free Sample/Materials/Mobile/free_male_1_body_low.mat
+  uploadId: 691337
