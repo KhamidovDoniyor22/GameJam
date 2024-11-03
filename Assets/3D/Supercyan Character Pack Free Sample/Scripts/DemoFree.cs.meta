@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 7363fb51bbe95584ea6b81693b2efc38
+timeCreated: 1486984085
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79870
+  packageName: 'Character Pack: Free Sample'
+  packageVersion: 3.0.0
+  assetPath: Assets/Supercyan Character Pack Free Sample/Scripts/DemoFree.cs
+  uploadId: 691337

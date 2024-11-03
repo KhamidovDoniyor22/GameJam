@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 1bb6e2b3ad66d664094ce58c0b0adb79
+labels:
+- Man
+- Male
+timeCreated: 1464185470
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79870
+  packageName: 'Character Pack: Free Sample'
+  packageVersion: 3.0.0
+  assetPath: Assets/Supercyan Character Pack Free Sample/Materials/High Quality/free_male_1_head.mat
+  uploadId: 691337

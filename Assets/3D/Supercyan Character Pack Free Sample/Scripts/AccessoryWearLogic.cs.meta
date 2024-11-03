@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: e8f5e3a09073e3c4bae993cf07a5ffc3
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79870
+  packageName: 'Character Pack: Free Sample'
+  packageVersion: 3.0.0
+  assetPath: Assets/Supercyan Character Pack Free Sample/Scripts/AccessoryWearLogic.cs
+  uploadId: 691337
