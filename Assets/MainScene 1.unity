@@ -7987,6 +7987,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   receiptPanel: {fileID: 502622404}
+  _livesText: {fileID: 0}
+  _seconds: 0
+  _TimerSeconds: {fileID: 0}
+  losePanel: {fileID: 914228164}
 --- !u!1 &1992372034
 GameObject:
   m_ObjectHideFlags: 0

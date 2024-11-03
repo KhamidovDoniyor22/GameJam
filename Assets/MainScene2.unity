@@ -2794,6 +2794,7 @@ GameObject:
   - component: {fileID: 416400411}
   - component: {fileID: 416400410}
   - component: {fileID: 416400416}
+  - component: {fileID: 416400417}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2959,6 +2960,21 @@ MonoBehaviour:
   - {fileID: 1180877833}
   - {fileID: 1447906002}
   - {fileID: 89398879}
+--- !u!114 &416400417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416400409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 502fca3c97ee1be469917ec4583b0cbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 3
+  _uiManager: {fileID: 0}
+  _jumpPlatformScaler: 50
 --- !u!1 &428308939
 GameObject:
   m_ObjectHideFlags: 0
@@ -10642,7 +10658,7 @@ MonoBehaviour:
   _livesText: {fileID: 0}
   _seconds: 0
   _TimerSeconds: {fileID: 0}
-  losePanel: {fileID: 0}
+  losePanel: {fileID: 914228164}
 --- !u!1 &2003690700
 GameObject:
   m_ObjectHideFlags: 0
