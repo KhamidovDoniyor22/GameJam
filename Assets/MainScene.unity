@@ -1716,6 +1716,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+  _uiManager: {fileID: 1991095479}
+  _jumpPlatformScaler: 5
 --- !u!1 &430373286
 GameObject:
   m_ObjectHideFlags: 0
@@ -5722,6 +5724,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   receiptPanel: {fileID: 502622404}
   _livesText: {fileID: 35592002}
+  _seconds: 2
+  _TimerSeconds: {fileID: 430373288}
+  losePanel: {fileID: 914228164}
 --- !u!1 &2013410473
 GameObject:
   m_ObjectHideFlags: 1
@@ -5886,13 +5891,13 @@ SceneRoots:
   - {fileID: 157207114}
   - {fileID: 432432461}
   - {fileID: 1823688467}
-  - {fileID: 416400415}
   - {fileID: 2013410475}
   - {fileID: 823793506}
   - {fileID: 356832740}
   - {fileID: 317494810}
   - {fileID: 126227276}
   - {fileID: 900251926}
+  - {fileID: 416400415}
   - {fileID: 1991095478}
   - {fileID: 354658680}
   - {fileID: 878353898}
