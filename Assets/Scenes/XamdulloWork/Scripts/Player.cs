@@ -7,17 +7,25 @@ public class SimpleCharacterMovement : MonoBehaviour
     private Rigidbody rb;
     [SerializeField] private int _lives = 3;
     private Renderer _mesh;
+    private UI _uiManager;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         _mesh = GetComponent<Renderer>();
+        _uiManager = GameObject.Find("UI").GetComponent<UI>();
+        if (_uiManager == null)
+        {
+            Debug.LogError("Debug  UI manager is null");
+        }
     }
 
     void Update()
     {
         Move();
         Jump();
+        isFalledDown();
+
     }
 
     void Move()
@@ -35,21 +43,30 @@ public class SimpleCharacterMovement : MonoBehaviour
         }
     }
 
-    public void Damage()
-    {
-        _lives -= 1;
-        Debug.Log("Player damage");
-    }
-
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Red_Platform"))
         {
-            Damage();
-            StartCoroutine(Wait());
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            StartCoroutine(ToggleMeshVisibility());
+            TakingDamage();
         }
+    }
+
+    void isFalledDown()
+    {
+        if (transform.position.y < -2)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y + 5, transform.position.z);
+            TakingDamage(2);
+            StartCoroutine(Wait());
+        }
+    }
+    void TakingDamage(int multiplyer = 2)
+    {
+        _lives--;
+        _uiManager.UpdateLives(_lives);
+        StartCoroutine(Wait());
+        rb.AddForce(Vector3.up * multiplyer *jumpForce, ForceMode.Impulse);
+        StartCoroutine(ToggleMeshVisibility());
     }
 
     IEnumerator ToggleMeshVisibility()
@@ -57,7 +74,7 @@ public class SimpleCharacterMovement : MonoBehaviour
         for (int i = 0; i < 5; i++)
         {
             _mesh.enabled = false;
-            yield return new WaitForSeconds(0.1f);  // Adjust time as needed
+            yield return new WaitForSeconds(0.1f);
             _mesh.enabled = true;
             yield return new WaitForSeconds(0.1f);
         }
@@ -66,6 +83,5 @@ public class SimpleCharacterMovement : MonoBehaviour
     IEnumerator Wait()
     {
         yield return new WaitForSeconds(2);
-        // After 2 seconds, you could perform additional actions if needed, such as hiding the platform
     }
 }
