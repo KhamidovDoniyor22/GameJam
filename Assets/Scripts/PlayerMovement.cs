@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody rb;
     private bool isGrounded;
+    private bool doubleJump = false;
 
     void Start()
     {
@@ -18,15 +19,23 @@ public class PlayerMovement : MonoBehaviour
     {
         Move();
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            Jump();
+            if (isGrounded)
+            {
+                Jump();
+            }
+            else if (!doubleJump)
+            {
+                doubleJump = true;
+                Jump();
+            }
         }
     }
 
     void Move()
     {
-        float moveInput = Input.GetAxisRaw("Horizontal"); 
+        float moveInput = Input.GetAxisRaw("Horizontal");
         Vector3 move = transform.right * moveInput * moveSpeed;
 
         rb.linearVelocity = new Vector3(move.x, rb.linearVelocity.y, rb.linearVelocity.z);
@@ -42,6 +51,7 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
         {
             isGrounded = true;
+            doubleJump = false;
         }
     }
 
@@ -53,5 +63,3 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 }
-
-

@@ -4,15 +4,17 @@
 TagManager:
   serializedVersion: 3
   tags:
+  - Ground
+  - Red_Platform
   - Product
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
-  - Ground
+  - 
   - 
   - 
   - 
