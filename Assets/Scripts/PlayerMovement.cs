@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Move()
     {
-        float moveInput = Input.GetAxisRaw("Horizontal"); 
+        float moveInput = Input.GetAxisRaw("Horizontal");
         Vector3 move = transform.right * moveInput * moveSpeed;
 
         rb.linearVelocity = new Vector3(move.x, rb.linearVelocity.y, rb.linearVelocity.z);
@@ -63,5 +63,3 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 }
-
-
