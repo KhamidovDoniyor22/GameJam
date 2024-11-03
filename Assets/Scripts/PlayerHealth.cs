@@ -48,12 +48,7 @@ public class PlayerHealth : MonoBehaviour
         if (other.CompareTag("Red_Platform"))
         {
             TakingDamage();
-        }
-
-        else if (other.CompareTag("Jump_Platform"))
-        {
-            rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0, rb.linearVelocity.z);
-            rb.AddForce(Vector3.up * rb.linearVelocity.y * _jumpPlatformScaler, ForceMode.Impulse);
+            PlayerArsenal.Instance.RemoveProduct();
         }
     }
 

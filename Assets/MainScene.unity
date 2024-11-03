@@ -3023,7 +3023,7 @@ Transform:
   m_GameObject: {fileID: 900251920}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.602, y: 1.17, z: 5.09}
+  m_LocalPosition: {x: -32.38, y: 1.17, z: 5.09}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5724,7 +5724,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   receiptPanel: {fileID: 502622404}
   _livesText: {fileID: 35592002}
-  _seconds: 2
+  _seconds: 120
   _TimerSeconds: {fileID: 430373288}
   losePanel: {fileID: 914228164}
 --- !u!1 &2013410473
