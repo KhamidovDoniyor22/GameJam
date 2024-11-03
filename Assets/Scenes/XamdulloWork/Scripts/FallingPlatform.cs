@@ -18,7 +18,7 @@ public class FallingPlatform : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player") && !isDestroyed)
+        if (collision.gameObject.tag == "Player" && !isDestroyed)
         {
             StartCoroutine(RespawnPlatform());
         }
