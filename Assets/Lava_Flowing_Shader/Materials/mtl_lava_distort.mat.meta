@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 787cb25de3401c44b939f2599cda764c
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 33635
+  packageName: Lava Flowing Shader
+  packageVersion: 1.2
+  assetPath: Assets/Lava_Flowing_Shader/Materials/mtl_lava_distort.mat
+  uploadId: 128561

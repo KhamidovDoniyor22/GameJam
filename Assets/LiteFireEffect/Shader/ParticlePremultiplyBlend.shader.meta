@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 140b9724bcd756144ae07443837b0890
+timeCreated: 1514346435
+licenseType: Store
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 131886
+  packageName: Fire Effect Vol.1
+  packageVersion: 1.1
+  assetPath: Assets/LiteFireEffect/Shader/ParticlePremultiplyBlend.shader
+  uploadId: 526751

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4dd6c2b5539220947a0c5938f0a39d20
+timeCreated: 1540726976
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 131886
+  packageName: Fire Effect Vol.1
+  packageVersion: 1.1
+  assetPath: Assets/LiteFireEffect/Prafab/BaseFire000.prefab
+  uploadId: 526751

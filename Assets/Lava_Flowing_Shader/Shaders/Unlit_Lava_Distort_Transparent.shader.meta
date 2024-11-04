@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 0803b816564bc844b9300c6e1572fcff
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 33635
+  packageName: Lava Flowing Shader
+  packageVersion: 1.2
+  assetPath: Assets/Lava_Flowing_Shader/Shaders/Unlit_Lava_Distort_Transparent.shader
+  uploadId: 128561

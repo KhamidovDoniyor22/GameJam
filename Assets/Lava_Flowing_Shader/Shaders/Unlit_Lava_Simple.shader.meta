@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: bec21333d7f8cf84cb75cab616acf589
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 33635
+  packageName: Lava Flowing Shader
+  packageVersion: 1.2
+  assetPath: Assets/Lava_Flowing_Shader/Shaders/Unlit_Lava_Simple.shader
+  uploadId: 128561
