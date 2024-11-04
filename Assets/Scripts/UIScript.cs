@@ -57,4 +57,20 @@ public class UIScript : MonoBehaviour
         Debug.Log("Lose");
         losePanel.SetActive(true);
     }
+
+    #region Next_levels
+
+    public void SecondLevel()
+    {SceneManager.LoadScene(2);}
+
+    public void ThirdLevel()
+    {SceneManager.LoadScene(3);}
+
+    public void FourthLevel()
+    {SceneManager.LoadScene(4);}
+
+    public void ThanksCredit()
+    {SceneManager.LoadScene(5);}
+
+    #endregion
 }
