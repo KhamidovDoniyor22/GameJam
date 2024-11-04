@@ -1159,7 +1159,7 @@ Transform:
   m_GameObject: {fileID: 317494804}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.61, y: 1.17, z: 5.09}
+  m_LocalPosition: {x: -16.343, y: 1.17, z: 5.09}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1378,7 +1378,7 @@ Transform:
   m_GameObject: {fileID: 356832734}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.37, y: 1.17, z: 5.09}
+  m_LocalPosition: {x: -10.92, y: 1.17, z: 5.09}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1558,7 +1558,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  jumpForce: 12
+  jumpForce: 5
   groundLayer:
     serializedVersion: 2
     m_Bits: 0
@@ -1703,6 +1703,11 @@ MonoBehaviour:
   - {fileID: 1180877833}
   - {fileID: 1447906002}
   - {fileID: 89398879}
+  productToRemove:
+  - {fileID: 8325864222545416498, guid: 51b280917e5bd574880430d541c1a454, type: 3}
+  - {fileID: 8572644420770162800, guid: dc27ad719a9f2cc47976fdd57861f123, type: 3}
+  - {fileID: 4545770504020449084, guid: 8e03f004dc74d6248ada19bef20d930c, type: 3}
+  - {fileID: 3004586667926516942, guid: d6a5975a24b8c5a4b82067064df3bff1, type: 3}
 --- !u!114 &416400417
 MonoBehaviour:
   m_ObjectHideFlags: 0

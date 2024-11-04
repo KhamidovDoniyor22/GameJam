@@ -39,11 +39,16 @@ public class PlayerMovement : MonoBehaviour
         Vector3 move = transform.right * moveInput * moveSpeed;
 
         rb.linearVelocity = new Vector3(move.x, rb.linearVelocity.y, rb.linearVelocity.z);
+
+        PlayerAnimation.Instance.RunAnimation(true);
+        PlayerAnimation.Instance.JumpAnimation(false);
     }
 
     void Jump()
     {
         rb.linearVelocity = new Vector3(rb.linearVelocity.x, jumpForce, rb.linearVelocity.z);
+        PlayerAnimation.Instance.RunAnimation(false);
+        PlayerAnimation.Instance.JumpAnimation(true);
     }
 
     void OnCollisionEnter(Collision collision)
@@ -52,6 +57,7 @@ public class PlayerMovement : MonoBehaviour
         {
             isGrounded = true;
             doubleJump = false;
+            PlayerAnimation.Instance.JumpAnimation(false);
         }
     }
 
