@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: e3d28cb150ad86f4a8100312a4aea7a1
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 33635
+  packageName: Lava Flowing Shader
+  packageVersion: 1.2
+  assetPath: Assets/Lava_Flowing_Shader/Scripts/ScrollingUVs_Layers.cs
+  uploadId: 128561

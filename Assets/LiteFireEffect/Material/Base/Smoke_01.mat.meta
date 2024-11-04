@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: afad238031a6402489da5209c8a266eb
+timeCreated: 1528105278
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 131886
+  packageName: Fire Effect Vol.1
+  packageVersion: 1.1
+  assetPath: Assets/LiteFireEffect/Material/Base/Smoke_01.mat
+  uploadId: 526751

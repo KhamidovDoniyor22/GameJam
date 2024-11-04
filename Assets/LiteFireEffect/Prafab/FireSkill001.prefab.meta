@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e5afdf3b2a713724d9f02e11764c80e5
+timeCreated: 1480521923
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 131886
+  packageName: Fire Effect Vol.1
+  packageVersion: 1.1
+  assetPath: Assets/LiteFireEffect/Prafab/FireSkill001.prefab
+  uploadId: 526751

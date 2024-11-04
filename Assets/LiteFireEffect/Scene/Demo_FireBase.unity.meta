@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 2b0986e1d8c6c1e4382c83d2b3c3a679
+timeCreated: 1528105405
+licenseType: Store
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 131886
+  packageName: Fire Effect Vol.1
+  packageVersion: 1.1
+  assetPath: Assets/LiteFireEffect/Scene/Demo_FireBase.unity
+  uploadId: 526751
