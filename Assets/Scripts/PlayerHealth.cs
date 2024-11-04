@@ -7,7 +7,6 @@ public class PlayerHealth : MonoBehaviour
     public static PlayerHealth Instance;
     [SerializeField] private int health = 3;
     [SerializeField] private UIScript _uiManager;
-    [SerializeField] private int _jumpPlatformScaler = 50;
 
     private Rigidbody rb;
     private Renderer _mesh;

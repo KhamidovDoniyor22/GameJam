@@ -9,8 +9,17 @@ EditorBuildSettings:
     path: Assets/Scenes/XamdulloWork/Scenes/MainMenu.unity
     guid: 30579192d05074d4eadd00498091b228
   - enabled: 1
-    path: Assets/MainScene.unity
-    guid: 8124e5870f4fd4c779e7a5f994e84ad1
+    path: Assets/Level_1.unity
+    guid: 8104e8b8429e52943924a0a47e96198e
+  - enabled: 1
+    path: Assets/Level_2.unity
+    guid: 8868e25b2518e9f4d92f92a0b5269e49
+  - enabled: 1
+    path: Assets/Level_3.unity
+    guid: 4df6d024ef20d1d4e9dd79a5a0822f85
+  - enabled: 1
+    path: Assets/Level_4.unity
+    guid: d608f93e6ed57af4e835744260e34d14
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 35845fe01580c41289b024647b1d1c53, type: 3}
   m_UseUCBPForAssetBundles: 0
