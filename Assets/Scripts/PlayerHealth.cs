@@ -72,6 +72,7 @@ public class PlayerHealth : MonoBehaviour
         StartCoroutine(ToggleMeshVisibility());
     }
 
+
     IEnumerator ToggleMeshVisibility()
     {
         for (int i = 0; i < 5; i++)

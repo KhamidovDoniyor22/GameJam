@@ -19,7 +19,6 @@ namespace Supercyan.FreeSample
 
         [SerializeField] private float m_moveSpeed = 2;
         [SerializeField] private float m_turnSpeed = 200;
-        [SerializeField] private float m_jumpForce = 4;
 
         [SerializeField] private Animator m_animator = null;
         [SerializeField] private Rigidbody m_rigidBody = null;
@@ -139,22 +138,10 @@ namespace Supercyan.FreeSample
 
         private void TankUpdate()
         {
-            float v = Input.GetAxis("Vertical");
             float h = Input.GetAxis("Horizontal");
 
             bool walk = Input.GetKey(KeyCode.LeftShift);
 
-            if (v < 0)
-            {
-                if (walk) { v *= m_backwardsWalkScale; }
-                else { v *= m_backwardRunScale; }
-            }
-            else if (walk)
-            {
-                v *= m_walkScale;
-            }
-
-            m_currentV = Mathf.Lerp(m_currentV, v, Time.deltaTime * m_interpolation);
             m_currentH = Mathf.Lerp(m_currentH, h, Time.deltaTime * m_interpolation);
 
             transform.position += transform.forward * m_currentV * m_moveSpeed * Time.deltaTime;
@@ -167,18 +154,16 @@ namespace Supercyan.FreeSample
 
         private void DirectUpdate()
         {
-            float v = Input.GetAxis("Vertical");
             float h = Input.GetAxis("Horizontal");
 
             Transform camera = Camera.main.transform;
 
             if (Input.GetKey(KeyCode.LeftShift))
             {
-                v *= m_walkScale;
+
                 h *= m_walkScale;
             }
 
-            m_currentV = Mathf.Lerp(m_currentV, v, Time.deltaTime * m_interpolation);
             m_currentH = Mathf.Lerp(m_currentH, h, Time.deltaTime * m_interpolation);
 
             Vector3 direction = camera.forward * m_currentV + camera.right * m_currentH;
@@ -207,7 +192,7 @@ namespace Supercyan.FreeSample
             if (jumpCooldownOver && m_isGrounded && m_jumpInput)
             {
                 m_jumpTimeStamp = Time.time;
-                m_rigidBody.AddForce(Vector3.up * m_jumpForce, ForceMode.Impulse);
+               // m_rigidBody.AddForce(Vector3.up * m_jumpForce, ForceMode.Impulse);
             }
         }
     }

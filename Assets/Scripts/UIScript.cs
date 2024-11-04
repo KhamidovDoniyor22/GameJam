@@ -37,6 +37,8 @@ public class UIScript : MonoBehaviour
     public void UpdateLives(int playerHealth)
     {
         _livesText.text = "Lives " + playerHealth.ToString();
+        if (playerHealth < 0)
+        { losePanel.SetActive(true); }
     }
 
 
@@ -59,6 +61,9 @@ public class UIScript : MonoBehaviour
     }
 
     #region Next_levels
+
+    public void MainMenu()
+    { SceneManager.LoadScene(0); }
 
     public void SecondLevel()
     {SceneManager.LoadScene(2);}
