@@ -10,6 +10,8 @@ public class UIScript : MonoBehaviour
     [SerializeField] private int _seconds;
     [SerializeField] private Text _TimerSeconds;
     [SerializeField] private GameObject losePanel;
+    [SerializeField] private AudioClip _clipLose;
+
 
     private void Awake()
     {
@@ -37,10 +39,16 @@ public class UIScript : MonoBehaviour
     public void UpdateLives(int playerHealth)
     {
         _livesText.text = "Lives " + playerHealth.ToString();
-        if (playerHealth < 0)
-        { losePanel.SetActive(true); }
+        if (playerHealth < 1)
+        { GameOver(); }
     }
 
+    private void GameOver()
+    {
+        Debug.Log("Lose");
+        losePanel.SetActive(true);
+        AudioSource.PlayClipAtPoint(_clipLose, transform.position);
+    }
 
     public void TimerCountDown()
     {
@@ -56,8 +64,7 @@ public class UIScript : MonoBehaviour
             _seconds--;
             _TimerSeconds.text = "Timer " + _seconds;
         }
-        Debug.Log("Lose");
-        losePanel.SetActive(true);
+        GameOver();
     }
 
     #region Next_levels

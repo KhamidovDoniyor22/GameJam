@@ -14,7 +14,7 @@ public class PlayerHealth : MonoBehaviour
     private void Start()
     {
 
-        _mesh = GetComponent<Renderer>();
+        _mesh = GetComponentInChildren<Renderer>();
         _uiManager = GameObject.Find("Canvas").GetComponent<UIScript>();
         rb = GetComponent<Rigidbody>();
         if (_uiManager == null)
@@ -26,20 +26,13 @@ public class PlayerHealth : MonoBehaviour
     void Update()
     {
         isFalledDown();
+        if (health < 1)
+        { Destroy(this.gameObject); }
     }
 
     private void Awake()
     {
         Instance = this;
-    }
-    public void HealthDeacrease(int amount)
-    {
-        health -= amount;
-    }
-    public bool CheckHealth()
-    {
-        if (health > 0) return true;
-        else return false;
     }
 
     void OnTriggerEnter(Collider other)
@@ -57,7 +50,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (transform.position.y < -2)
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y + 5, transform.position.z);
+            transform.position = new Vector3(transform.position.x, transform.position.y + 3, transform.position.z);
             rb.linearVelocity = new Vector3(0, 0, 0);
             TakingDamage();
             StartCoroutine(Wait());
@@ -68,7 +61,7 @@ public class PlayerHealth : MonoBehaviour
         health--;
         _uiManager.UpdateLives(health);
         StartCoroutine(Wait());
-        rb.AddForce(Vector3.up * 5, ForceMode.Impulse);
+        rb.AddForce(Vector3.up * 12, ForceMode.Impulse);
         StartCoroutine(ToggleMeshVisibility());
     }
 

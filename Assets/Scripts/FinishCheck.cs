@@ -4,6 +4,7 @@ public class FinishCheck : MonoBehaviour
 {
     [SerializeField] private GameObject winPanel;
     [SerializeField] private GameObject losePanel;
+    [SerializeField] private AudioClip _clipWin;
 
     public int levelGoal;
     private int levelIndex;
@@ -28,6 +29,7 @@ public class FinishCheck : MonoBehaviour
         if(levelIndex == levelGoal)
         {
             Debug.Log("WIN");
+            AudioSource.PlayClipAtPoint(_clipWin, transform.position);
             winPanel.SetActive(true);
         }
         else
