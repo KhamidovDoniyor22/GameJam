@@ -17,6 +17,12 @@ public class UIScript : MonoBehaviour
     {
         Instance = this;
     }
+    private void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.Escape))
+        { Application.Quit(); }
+    }
+
     private void Start()
     {
         receiptPanel.SetActive(true);
