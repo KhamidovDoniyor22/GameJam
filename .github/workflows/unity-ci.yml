@@ -7,12 +7,15 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest  # Runner; adjust for your needs (e.g., windows-latest)
+    runs-on: windows-latest  # Runner; adjust for your needs (e.g., windows-latest)
 
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v3
 
+    - name: Unity - Activate
+    - uses: game-ci/unity-activate@v2.0.0
+    
     - name: Set up Unity
       uses: game-ci/unity-builder@v2
       with:
