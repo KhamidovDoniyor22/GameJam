@@ -1,0 +1,32 @@
+name: Unity Build CI
+
+on:
+  push:
+    branches:
+      - main  # Monitor the main branch for new commits
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Runner; adjust for your needs (e.g., windows-latest)
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Set up Unity
+      uses: game-ci/unity-builder@v2
+      with:
+        unityVersion: 6000.0.25f1  # Match your Unity version
+        targetPlatform: StandaloneWindows64  # Build target platform
+
+    - name: Build the Project
+      uses: game-ci/unity-builder@v2
+      with:
+        projectPath: .  # Adjust if your Unity project is in a subfolder
+        targetPlatform: StandaloneWindows64
+
+    - name: Upload Build Artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: Build
+        path: build/StandaloneWindows64/  # Path to your executable
